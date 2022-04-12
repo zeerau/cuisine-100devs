@@ -1,0 +1,182 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: rgb(22, 31, 42);
+}
+.bg-img{
+  background-image: url('/pexels-pixabay-416778.png');
+  background-size: 100% 35rem;
+  background-repeat: no-repeat;
+  width: fit-content;
+  height: 25rem;
+  color: white;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+nav ul{
+  display: flex;
+}
+li{
+  padding-left: 10px;
+}
+header button{
+  padding: 10px;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+.hero{
+  margin: 3rem auto 0;
+  display: block;
+  width: 70%;
+  
+}
+.hero h1,p{
+ text-align: center;
+ z-index: 1;
+}
+.hero p{
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+}
+.why,.volunteer{
+  margin: 3rem auto;
+}
+.why h2,p{
+  text-align: center;
+}
+.why h2{
+  text-transform: uppercase;
+  font-size: larger;
+}
+.why p,.volunteer p{
+  width: 40%;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 1rem;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+.services{
+  background-color: rgb(205, 231, 231);
+  display: flex;
+ padding: 3rem;
+}
+/* .services section{
+  margin: 3rem auto; */
+  /* width: 50%;
+} */
+.services img{
+  width: 300px;
+  height: 150px;
+  display: block;
+  margin: 0 auto 1.5rem;
+}
+.services h3,p,button{
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.services p{
+  width: 60%;
+  text-align: center;
+  margin: 0 auto 2rem;
+}
+.services button,.volunteer button{
+  margin: 0 auto;
+  align-items: center;
+  display: block;
+  background-color: transparent;
+  outline: none;
+  box-shadow: none;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.volunteer h2,p,button{
+  text-align: center;
+  display: block;
+}
+.volunteer p{
+  padding-bottom: 2rem;
+}
+footer{
+  background-color: rgb(22, 31, 42);
+  color: whitesmoke;
+  
+  margin-bottom: 0;
+}
+.flex{
+  display: flex;
+  justify-content: space-between;
+ padding: 1.5rem 2rem 0;
+}
+
+@media (max-width:768px) {
+  .services{
+    display: block;
+  }
+  .services .classes{
+display: block;
+padding-bottom: 2rem;
+  }
+  .flex{
+    display: block;
+    text-align: center;
+  }
+  .flex .left{
+    padding-bottom: 2rem;
+  }
+  .flex span{
+    color: cadetblue;
+  }
+  .hero{
+    margin: 1rem auto 1rem;
+    display: block;
+    width: 80%;
+    
+  }
+  .why p,.volunteer p{
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 1rem;
+  }
+  .hero p{
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+  }
+}
+
+
